@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Fipps-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Fipps-Regular.otf');
+}
+
+@font-face {
+  font-family: 'RainyHearts';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/rainyhearts.ttf');
+}
+
+html body {
+	/*font-family: courier;*/
+	font-family: 'RainyHearts';
+	background-color: black;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 3px solid slategray;
+    padding: 0;
+}
+
+span#room-number {
+	position: absolute;
+    color: white;
+    padding: 20px;
+    line-height: 19px;
+    z-index: 99999999999;
+}
+
+div#help {
+	position: absolute;
+	bottom: 10px;
+	color: white;
+	width: 100%;
+	z-index: 3333333333;
+	text-align: center;
+}
+
+div.chat-window {
+	overflow: auto;
+	background-color: dark-gray;
+	z-index: -1999;
+}
+
+.character-label {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	font-family: 'Fipps-Regular';
+	background: black;
+	line-height: 16px;
+	backface-visibility: hidden !important;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+.chat-input {
+	background-color: white;
+}
+
+h1#logo {
+	position:absolute;
+	color: #E8B8E7;
+	top: -100px;
+	font-size: 30px;
+	font-family: 'Fipps-Regular';
+	display: inline-block;
+}
+
+.chat-bubble {
+	box-sizing: content-box !important;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	background-color: white;
+	backface-visibility: hidden !important;
+	font-size: 25px;
+	color: black;
+	font-family: 'RainyHearts';
+}
+
+span.player-name {
+	font-weight: bold;
+	font-size: 14px;
+	height: 100%;
+	font-family: 'Fipps-Regular' !important;
+	font-weight: bold;
+}
+
+span.player-comment {
+	color: white !important;
+}
+
+#chat-new input {
+	border: none;
+	position: inline-block;
+	background-color: rgba(0, 0, 0, 0);
+	outline-width: 0px;
+	height: 100%;
+	color: white;
+	font-family: 'RainyHearts';
+	font-size: 25px;
+	font-weight: bold;
+}
+
+div#chat-new {
+	position: fixed;
+	font-size: 20px;
+	width: 100%;
+	height: 40px;
+	bottom: 0%;
+	left: 0%;
+	z-index: 100;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#chat-new input {
+	width: 80%;
+	position: relative;
+}
+
+div.chat-comment {
+	padding: 30px;
+	z-index: 1000;
+	color: white;
+	font-size: 60px;
+}
+
+div#alert {
+	position: absolute;
+    color: red;
+    top: 50%;
+    margin-top: 195px;
+    text-align: center;
+    width: 100%;
+}
+
+form#start-form {
+	padding: 30px;
+	top: 50%;
+	margin-top: -150px;
+	width: 462px;
+	padding-top: 30px;
+	height: 270px;
+	margin-left: -262px;
+	left: 50%;
+	position: absolute;
+	display: block;
+	z-index: 100;
+	background-color: #E8B8E7;
+	-webkit-box-shadow: 6px 6px 0px 0px rgb(162, 109, 162);
+	-moz-box-shadow: 6px 6px 0px 0px rgb(162, 109, 162);
+	box-shadow: 6px 6px 0px 0px rgb(162, 109, 162);
+}
+
+*:focus {
+    outline: 0;
+}
+
+form#start-form div{
+	margin-bottom: 10px;
+}
+
+form#start-form center {
+	margin-bottom: 15px;
+}
+
+input#random {
+	width: 100%;
+}
+
+#start-form input {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background-color: #F5C8F7;
+	font-size: 25px;
+	font-family: 'RainyHearts';
+}
+
+.in-shadow {
+   -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+}
+
+.out-shadow {
+/*   -moz-box-shadow:    0 0 3px #000000;
+   -webkit-box-shadow: 0 0 3px #000000;
+   box-shadow:         0 0 3px #000000;*/
+}
+
+#chat-log li {
+	display: inline-block;
+	position: absolute;
+	color: white;
+	font-size: 28px;
+}
+
+#chat-log {
+	position: fixed;
+	vertical-align: bottom;
+	display: none;
+	position: absolute;
+	bottom: 60px;
+	font-size: 20px;
+	padding-left: 25px;
+	width: 100%;
+	height: 100%;
+	z-index: 19999;
+}
+
+.stream-header {
+	background: black;
+	color: white;
+	font-size: 80px;
+	font-family: 'Fipps-Regular';
+	text-align: center;
+}

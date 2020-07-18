@@ -1,0 +1,25 @@
+{
+  "name": "twitch-rooms-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch-server": "nodemon server/index.js",
+    "watch-client": "watchify ./src/main.js -o ./public/bundle.js -d -v -t [ babelify ]",
+    "dev": "npm run watch-client & npm run watch-server",
+    "start": "browserify ./src/main.js  -o ./public/bundle.js -d -v -t [ babelify ] & node server/index.js"
+  },
+  "dependencies": {
+    "babelify": "^6.3.0",
+    "body-parser": "^1.13.2",
+    "browserify": "^10.0.0",
+    "express": "^4.12.3",
+    "famous": "git://github.com/redwoodfavorite/engine.git#twitch-rooms",
+    "gl-matrix": "^2.3.1",
+    "http": "0.0.0",
+    "socket.io": "^1.3.5",
+    "watchify": "^3.2.1"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
